@@ -3,6 +3,7 @@ package com.yashodeep.vmprovisioningservice.web;
 import com.yashodeep.vmprovisioningservice.jpa.UserDetails;
 import com.yashodeep.vmprovisioningservice.jpa.UserRepo;
 import com.yashodeep.vmprovisioningservice.security.jwt.JwtTokenProvider;
+import com.yashodeep.vmprovisioningservice.services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -29,15 +30,17 @@ public class AuthController {
     private final JwtTokenProvider jwtTokenProvider;
     private final UserRepo users;
     private final PasswordEncoder passwordEncoder;
+    private final UserService userService;
 
     public AuthController(AuthenticationManager authenticationManager,
                           JwtTokenProvider jwtTokenProvider,
                           UserRepo users,
-                          PasswordEncoder passwordEncoder) {
+                          PasswordEncoder passwordEncoder, UserService userService) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenProvider = jwtTokenProvider;
         this.users = users;
         this.passwordEncoder = passwordEncoder;
+        this.userService = userService;
     }
 
     @PostMapping("/signin")
@@ -65,10 +68,6 @@ public class AuthController {
 
     @PostMapping("/signup")
     public UserDetails signup(@RequestBody UserDetails userDetails) {
-        UserDetails byUsername = users.findByUsername(userDetails.getUsername()).orElse(userDetails);
-        String password = userDetails.getPassword();
-        userDetails.setId(byUsername.getId());
-        userDetails.setPassword(passwordEncoder.encode(password));
-        return users.saveAndFlush(userDetails);
+        return userService.userSignup(userDetails);
     }
 }

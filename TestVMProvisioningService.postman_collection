@@ -1,0 +1,322 @@
+{
+	"id": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+	"name": "TestVMProvisioningService",
+	"description": "",
+	"order": [
+		"d5f2ea8b-8291-3e49-a32a-1caa7d55e604",
+		"fed55dd8-7147-e604-02e0-ef9fc40c712c",
+		"575f8980-ea93-f2b3-b5ce-7fa13818b04b",
+		"c3188289-71a4-2a8b-3b21-e43501358a06",
+		"c07e1468-cd6c-36c7-280d-dab76cd31a68",
+		"bffa90d7-5b01-e60f-a206-b21f71597ad6",
+		"d749777d-5c21-b9db-2ab7-cdde2292f99c",
+		"adc5af10-a3ae-2917-aebd-39e7d4a79810"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1557059831303,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "575f8980-ea93-f2b3-b5ce-7fa13818b04b",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557067329475,
+			"name": "Provision VM For User Win",
+			"description": "",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"responses": [],
+			"rawModeData": "{\n    \"os\": \"Win\",\n    \"ram\": \"16GB\",\n    \"hdd\": \"250GB\",\n    \"cpuCores\": 6\n}"
+		},
+		{
+			"id": "adc5af10-a3ae-2917-aebd-39e7d4a79810",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get All Provisioned VMs After update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557067428902,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "bffa90d7-5b01-e60f-a206-b21f71597ad6",
+			"rawModeData": "{\n    \"os\": \"MacOs\",\n    \"ram\": \"16GB\",\n    \"hdd\": \"250GB\",\n    \"cpuCores\": 6\n}"
+		},
+		{
+			"id": "bffa90d7-5b01-e60f-a206-b21f71597ad6",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get All Provisioned VMs",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557067428902,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"os\": \"MacOs\",\n    \"ram\": \"16GB\",\n    \"hdd\": \"250GB\",\n    \"cpuCores\": 6\n}"
+		},
+		{
+			"id": "c07e1468-cd6c-36c7-280d-dab76cd31a68",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Provision VM For User MacOs",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557067388831,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"os\": \"MacOs\",\n    \"ram\": \"16GB\",\n    \"hdd\": \"250GB\",\n    \"cpuCores\": 6\n}"
+		},
+		{
+			"id": "c3188289-71a4-2a8b-3b21-e43501358a06",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Provision VM For User Ubuntu",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557067359409,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"os\": \"Ubuntu\",\n    \"ram\": \"16GB\",\n    \"hdd\": \"250GB\",\n    \"cpuCores\": 6\n}"
+		},
+		{
+			"id": "d5f2ea8b-8291-3e49-a32a-1caa7d55e604",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/auth/signup",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "User Sign Up",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557063958169,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\": \"yashodeep.v11\",\n\t\"password\": \"yash\",\n\t\"name\": \"Yasho\",\n\t\"emailAddress\": \"yashodeep.v11@gmail.com\",\n\t\"mobileNumber\": \"9101921920\",\n\t\"active\": true,\n\t\"roles\": [\n\t\t\"USER\"]\n}"
+		},
+		{
+			"id": "d749777d-5c21-b9db-2ab7-cdde2292f99c",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNob2RlZXAudjExIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE1NTcwNjcyNDQsImV4cCI6MTU1NzA3MDg0NH0.kNplL6p3AIGUNlyXgcXBm6dBnX9w6Eti_VZattTaPXg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557067969657,
+			"name": "Update VM",
+			"description": "",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"responses": [],
+			"rawModeData": "{\n        \"id\": 31,\n        \"allocatedSpace\": \"331.30814292970314gb\",\n        \"vmConfig\": {\n            \"id\": 55,\n            \"os\": \"Win\",\n            \"ram\": \"32GB\",\n            \"hdd\": \"250GB\",\n            \"cpuCores\": 6\n        }\n    }"
+		},
+		{
+			"id": "fed55dd8-7147-e604-02e0-ef9fc40c712c",
+			"headers": "Accept: application/json\nAuthorization: Basic Og==\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Og==",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/auth/signin",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1e3b4f91-db54-043e-a676-07911f6b91a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "User Sign in",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557059890791,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\": \"yashodeepv\",\n\t\"password\": \"yash\"\n}"
+		}
+	]
+}

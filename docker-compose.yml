@@ -1,0 +1,21 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+    -  9191:9191
+  db:
+    container_name: sample_db
+    image: postgres:9.5
+    volumes:
+    - sample_db:/var/lib/postgresql/data
+    environment:
+    - POSTGRES_PASSWORD=docker
+    - POSTGRES_USER=postgres
+    - POSTGRES_DB=postgres
+    - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+    - 5432:5432
+
+volumes:
+  sample_db: {}

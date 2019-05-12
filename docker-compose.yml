@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   web:
     build: .
@@ -16,6 +16,17 @@ services:
     - PGDATA=/var/lib/postgresql/data/pgdata
     ports:
     - 5432:5432
+  ui:
+    build:
+      context: vm-provisioning-ui/.
+      dockerfile: Dockerfile
+    environment:
+    - NODE_ENV=production
+    command: npm start --prefix vm-provisioning-ui/
+    ports:
+    - 3000:3000
+    volumes:
+    - .:/app
 
 volumes:
   sample_db: {}

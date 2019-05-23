@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/vm-provisioning-service/provision-vm")
+@RequestMapping("/vm-provisioning-service/v1/vm")
 public class VmConfigContoller {
 
     private final VmConfigService vmConfigService;

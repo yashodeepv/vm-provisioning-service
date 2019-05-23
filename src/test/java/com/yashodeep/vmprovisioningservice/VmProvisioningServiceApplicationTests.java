@@ -48,7 +48,7 @@ public class VmProvisioningServiceApplicationTests {
 				.header("Authorization", "Bearer "+token)
 				.accept(ContentType.JSON)
 				.when()
-				.get("/vm-provisioning-service/provision-vm")
+				.get("/vm-provisioning-service/v1/vm")
 				.then()
 				.assertThat()
 				.statusCode(HttpStatus.SC_OK);
@@ -65,7 +65,7 @@ public class VmProvisioningServiceApplicationTests {
 						.ram("12GB")
 						.build())
 				.when()
-				.post("/vm-provisioning-service/provision-vm")
+				.post("/vm-provisioning-service/v1/vm")
 				.then()
 				.statusCode(403);
 	}
@@ -82,7 +82,7 @@ public class VmProvisioningServiceApplicationTests {
 						.ram("12GB")
 						.build())
 				.when()
-				.post("/vm-provisioning-service/provision-vm")
+				.post("/vm-provisioning-service/v1/vm")
 				.then()
 				.statusCode(200);
 

@@ -35,7 +35,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"url": "http://localhost:9191/vm-provisioning-service/v1/vm",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -70,7 +70,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"url": "http://localhost:9191/vm-provisioning-service/v1/vm",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -109,7 +109,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"url": "http://localhost:9191/vm-provisioning-service/v1/vm",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -146,7 +146,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"url": "http://localhost:9191/vm-provisioning-service/v1/vm",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -183,7 +183,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"url": "http://localhost:9191/vm-provisioning-service/v1/vm",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -257,7 +257,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:9191/vm-provisioning-service/provision-vm",
+			"url": "http://localhost:9191/vm-provisioning-service/v1/vm",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},

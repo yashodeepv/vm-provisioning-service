@@ -2,7 +2,7 @@
 
 ## Technologies Used:
 1. Spring Boot
-2. Spring Security
+2. Spring Security using JWT
 3. Java 8
 4. Junit and Mockito Based test cases
 5. React JS
